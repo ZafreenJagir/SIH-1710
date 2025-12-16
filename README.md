@@ -1,7 +1,7 @@
 # Smart India Hackathon Workshop
-# Date:
-## Register Number:
-## Name:
+
+## Register Number: 212223040252
+## Name: ZAFREEN J
 ## Problem Title
 SIH 1710: Enhancing Navigation for Railway Station Facilities and Locations
 ## Problem Description
@@ -12,15 +12,89 @@ Ministry of Railway
 
 ## Idea
 
+Railway stations are large and complex, making it difficult for passengers—especially first-time travelers, elderly people, and persons with disabilities—to locate platforms, restrooms, ticket counters, food courts, and exits.
+
+The proposed solution is a smart indoor navigation system that provides real-time, accurate, and accessible directions within railway stations. The system uses interactive 3D maps, AI-based route optimization, voice guidance, and digital kiosks to help passengers navigate easily.
+
+This solution improves passenger experience, reduces congestion, saves time, and ensures inclusive accessibility for all users.
 
 ## Proposed Solution / Architecture Diagram
 
+The system consists of three main layers:
+
+🔹 User Layer
+
+Mobile Application (Android / iOS)
+
+Digital Kiosks installed inside stations
+
+🔹 Processing Layer
+
+Central Navigation Server
+
+AI Path-finding Engine
+
+Accessibility Rules Engine
+
+🔹 Data Layer
+
+Station Layout Database
+
+Facility & Service Database
+
+Real-time Updates from Station Admin
+
+
+<img width="770" height="551" alt="image" src="https://github.com/user-attachments/assets/49ed279d-a770-42d8-ab88-465dde3a6be2" />
+
+
+
+### Working:
+Station Admin updates layouts, facilities, and temporary changes.
+Data is stored in the central server.
+Users access navigation through mobile app or kiosks.
+AI calculates the best route considering congestion and accessibility.
+Step-by-step navigation is provided using visual and voice guidance.
 
 ## Use Cases
+
+<img width="688" height="251" alt="image" src="https://github.com/user-attachments/assets/2358a627-c350-451e-9740-02286bd6af6a" />
 
 
 ## Technology Stack
 
+#### Frontend
+Mobile App: Flutter / React Native
+Kiosk UI: HTML, CSS, JavaScript, React
+3D Maps: Three.js / Unity
+
+#### Backend
+Node.js / Python (FastAPI)
+REST APIs
+WebSockets for real-time updates
+
+#### Mapping & Navigation
+Indoor Positioning (BLE Beacons / Wi-Fi / QR Codes)
+AI Pathfinding Algorithms (Dijkstra / A*)
+GIS Mapping Tools
+
+#### Database
+PostgreSQL / MySQL (Structured Data)
+Firebase / MongoDB (Real-time Updates)
+
+#### Accessibility
+Text-to-Speech (TTS)
+Voice Commands (Speech-to-Text)
+Multilingual Support
+
+#### Deployment
+Cloud Platform (AWS / Azure / GCP)
+Docker for containerization
 
 ## Dependencies
 
+Availability of accurate railway station layout and facility data
+Internet connectivity for real-time updates and navigation
+Installation of digital kiosks and indoor positioning tools (QR codes / BLE beacons)
+Integration support from existing railway systems and databases
+Access to mapping, voice guidance, and AI services/APIs
